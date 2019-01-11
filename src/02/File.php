@@ -2,6 +2,22 @@
 
 class File
 {
-    public $length;
-    public $sent;
+    private $length;
+    private $sent;
+
+    /**
+     * @return mixed
+     */
+    public function length()
+    {
+        return $this->length;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function sent()
+    {
+        return $this->sent;
+    }
 }

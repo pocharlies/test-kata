@@ -11,6 +11,6 @@ class Progress
 
     public function getAsPercent()
     {
-        return $this->file->sent * 100 / $this->file->length;
+        return $this->file->sent() * 100 / $this->file->length();
     }
 }

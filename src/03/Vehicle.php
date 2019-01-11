@@ -1,14 +1,13 @@
 <?php
 
-class Vehicle
+interface Vehicle
 {
-    public function startEngine()
-    {
-        // Default engine start functionality
-    }
-
-    public function accelerate()
-    {
-        // Default acceleration functionality
-    }
+    public function startEngine();
+    public function accelerate();
+    public function stopEngine();
+    public function brake();
+    public function lightsOn();
+    public function changeGear($gear);
+    public function stopRadio();
+    public function ejectCD();
 }

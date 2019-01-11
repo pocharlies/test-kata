@@ -8,3 +8,12 @@ To install phpunit:
 composer require phpunit/phpunit
 ```
 
+Install dependencies
+```
+ docker-compose run --entrypoint="composer install" phpunit
+```
+
+Execute tests
+```
+docker-compose run phpunit /opt/tests
+```
